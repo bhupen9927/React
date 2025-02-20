@@ -1,6 +1,17 @@
+import React, { useState, useEffect } from "react";
+import DisclaimerPopup from "./components/DisclaimerPopup/DisclaimerPopup";
+
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    setIsOpen(true);
+  }, []);
+
   return (
-    <h1> Hello World! </h1>
+    <div>
+      <DisclaimerPopup isOpen={isOpen} onClose={() => setIsOpen(false)} />
+    </div>
   );
 }
 
