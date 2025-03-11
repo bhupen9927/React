@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,12 +24,13 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+  <title>React App</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -39,5 +40,458 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+<script>
+  const desktopnavData = {
+    "navigation": [
+      {
+        "title": "USD",
+        "Short-term-direction": "DXY^",
+        "content": "USD sentiment is still waiting for clarity on the depth and intensity of US President Trump's tariff strategy over the near term. The USD has strengthened beyond levels implied by its rate expectations, but the premium may persist for now. The Federal Reserve is likely to keep its policy rate unchanged at its 28-29 January meeting, and the next 25bp cut is not fully priced in by markets until its 17-18 June meeting (Bloomberg, 24January 2025). Volatility may rise amid the headline chasing, but ultimately we expect the optimal growth/inflation mix in the US to foster a grind higher in the USD. Indeed, recent US activity indicators point to renewed upside surprises, and so markets will still eye US data releases, like PCE price index (31 January), non-farm payrolls (7 February) and CPI (12 February).",
+        "image": "https://flagcdn.com/w40/us.png",
+      },
+      {
+        "title": "EUR",
+        "Short-term-direction": "EUR-USD",
+        "content": "EUR-USD has tracked its 2-year rate differentials, but its recent mini-bounce looks misplaced. Economic data paints an increasingly challenging picture of stagflation in the Eurozone. The European Central Bank (ECB) is almost fully priced by markets for a 25bp cut at its 30 January meeting and a follow-up 25bp cut in March, so the EUR's reaction to the ECB meeting will likely be determined by how clear the guidance is around further successive easing, and also how open the door is to a 50bp cut. The EUR may be exposed to political developments, with the possibility of the EU facing additional US tariffs and the developments in the run-up to Germany's federal election on 23 February. Fiscal policy could be a focus too.",
+        "image": "https://flagcdn.com/w40/eu.png",
+      },
+      {
+        "title": "GBP",
+        "Short-term-direction": "GBP-USD",
+        "content": "GBP-USD is likely to face downside risks over the coming weeks as the domestic economy struggles. The Bank of England (BoE) is widely expected to deliver a 25bp cut at its 6 February meeting, but the meeting may prove more dovish than current market pricing (with c45bp of successive easing in 2025, Bloomberg, 24 January 2025). US tariffs may pose an ongoing risk to the GBP, as do the UK's twin deficits.",
+        "image": "https://flagcdn.com/w40/gb.png",
+      },
+      {
+        "title": "JPY",
+        "Short-term-direction": "USD-JPY",
+        "content": "We look for a resumption of the grind higher in USD-JPY over the coming weeks, unless we get a “risk off” mood, lower US Treasuries, or dovish Fed shocks. Now that the Bank of Japan (BoJ) delivered a widely expected hike of 25bp on 24 January, and with positioning not stretched, the impact should be modest. Meanwhile, Japanese authorities' tolerance for a weak JPY is likely low, putting a cap to USD-JPY, while investment capital flow outlook remains unclear for now. Japan's Government Pension Investment Fund's (GPIF) five-year asset allocation plan will be announced in the coming months.",
+        "image": "https://flagcdn.com/w40/jp.png",
+      },
+      {
+        "title": "CFH",
+        "Short-term-direction": "USD-CHF",
+        "content": "The Swiss National Bank's (SNB) dovishness appears well-priced, with markets expecting its policy rate to be c0.2% by end-2025. The bar, for now, appears high for markets to begin pricing in negative rates, given the SNB's clear preference against negative rates. The next meeting (20 March) is still distant, but inflation (13 February) and GDP data (27 February) could still be influential for the CHF. USD-CHF is likely to grind higher, following broader USD moves.",
+        "image": "https://flagcdn.com/w40/ch.png",
+      },
+      {
+        "title": "CAD",
+        "Short-term-direction": "USD-CAD",
+        "content": "Macro, FX, and rates forecasts suggest the consensus is assuming the best when it comes to US-Canada trade relations. But a 25% import tariff levied by the US could bring a 1.8% hit to the Canadian economy, and the hit could be as high as 2.6% if Canada retaliated in full (Canadian Chamber of Commerce, 28 November 2024). Risk-reward consequently favours a weaker CAD, given the looming tariff threat on 1 February. A 25bp cut by the Bank of Canada at the 29 January meeting is fully priced in, and this will bring the policy rate to 3% (c1.3% below its US counterpart, Bloomberg, 24 January 2025).",
+        "image": "https://flagcdn.com/w40/ca.png",
+      },
+      {
+        "title": "AUD",
+        "Short-term-direction": "AUD-USD",
+        "content": "With the lack of immediate US tariff threat on the Asia pacific region and more positive global risk sentiment, AUD-USD should enjoy a relief rally over the coming weeks. In addition, while communication from the Reserve Bank of Australia (RBA) has skewed dovishly since December 2024, risk-reward favours positioning for a higher end-2025 policy rate with three 25bp cuts already priced in. The RBA will meet on 18 February, with c75% chance of a 25bp cut in the price (Bloomberg, 24 January 2025). But it is worth noting that the overall US policy mix should be negative for the AUD in the medium term.",
+        "image": "https://flagcdn.com/w40/au.png",
+      },
+      {
+        "title": "NZD",
+        "Short-term-direction": "NZD",
+        "content": "Like the AUD, we are also tactically optimistic for the NZD, given the recent external and domestic developments. In addition, New Zealand's export destinations are more diversified than Australia's while dairy prices are enjoying a cyclical upswing. A 50bp cut by the Reserve Bank of New Zealand (RBNZ) at the 19 February meeting is also mostly priced in (Bloomberg, 24 January 2025). However, this temporary relief does not change our medium-term bearish view on NZD-USD.",
+        "image": "https://flagcdn.com/w40/nz.png",
+      },
+    ]
+  };
+
+  function waitForElement(selector, trigger, delayInterval, delayTimeout) {
+    var interval = setInterval(function () {
+      if (
+        document &&
+        document.querySelector(selector) &&
+        document.querySelectorAll(selector).length > 0
+      ) {
+        clearInterval(interval);
+        trigger();
+      }
+    }, delayInterval);
+    setTimeout(function () {
+      clearInterval(interval);
+    }, delayTimeout);
+  }
+
+  waitForElement(".faq-container .faq-itm .faq-qst", function () {
+    document.addEventListener('click', function (event) {
+      let clickedTab = event.target.closest('.promo-card__fx-trends .promo-card__tabs-wrapper .promo-card__tab');
+
+      if (clickedTab) {
+        let text = clickedTab.innerText.trim();
+        let sanitizedClass = text.toLowerCase().replace(/\s+/g, '-');
+        let usdData = desktopnavData.navigation.find(item => item.title === text);
+
+        if (usdData) {
+          document.querySelector('.promo-card__fx-trends .short-term-direction .country h2').innerText = (usdData.title);
+          document.querySelector('.promo-card__fx-trends .promo-card__tabs-content .short-term-direction .short span').innerText = (usdData["Short-term-direction"]);
+          document.querySelector('.promo-card__fx-trends .promo-card__tabs-content .promo-card__para').innerText = (usdData.content);
+          document.querySelector('.promo-card__fx-trends .promo-card__tabs-content .logo img').src = (usdData.image);
+        } else {
+          console.log("Data not found for:", text);
+        }
+
+        document.querySelectorAll('.promo-card__fx-trends .promo-card__tabs-wrapper .promo-card__tab.active').forEach(tab => {
+          tab.classList.remove('active');
+          let parent = tab.parentElement.parentElement;
+          parent.classList.remove('active');
+          parent.classList.forEach(cls => {
+            if (cls.startsWith('tab-')) {
+              parent.classList.remove(cls);
+            }
+          });
+        });
+        clickedTab.classList.add('active');
+        clickedTab.parentElement.parentElement.classList.add(`tab-${sanitizedClass}`);
+      }
+    });
+
+    //FAQ ACCORDION SCRIPT
+    document.querySelectorAll(".faq-qst").forEach((question) => {
+      question.addEventListener("click", function () {
+        let faqItem = this.parentElement;
+        let isOpen = faqItem.classList.contains('faq-open');
+        if (isOpen) {
+          faqItem.classList.remove('faq-open');
+        } else {
+          document.querySelectorAll('.faq-itm').forEach(item => {
+            item.classList.remove('faq-open');
+          });
+          faqItem.classList.add('faq-open');
+        }
+      });
+    });
+
+    //GET NOTIFIED FORM DROPDOWN 
+    const currencies = {
+      "USD": "US Dollar", "GBP": "British Pound", "EUR": "Euro", "JPY": "Japanese Yen",
+      "CAD": "Canadian Dollar", "CHF": "Swiss Franc", "NOK": "Norwegian Krone", "SEK": "Swedish Krona",
+      "AUD": "Australian Dollar", "NZD": "New Zealand Dollar", "HKD": "Hong Kong Dollar",
+      "INR": "Indian Rupee", "CNH": "Chinese Yuan Renminbi (Offshore)", "AED": "UAE Dirham",
+      "ALL": "Albanian Lek", "AMD": "Armenian Dram", "ARS": "Argentine Peso", "BBD": "Barbados Dollar",
+      "BDT": "Bangladeshi Taka", "BGN": "Bulgarian Lev", "BHD": "Bahraini Dinar", "BMD": "Bermudan Dollar",
+      "BND": "Brunei Dollar", "BRL": "Brazilian Real", "BSD": "Bahamian Dollar", "BWP": "Botswana Pula",
+      "CLP": "Chilean Peso", "CNY": "Chinese Yuan Renminbi", "COP": "Colombian Peso", "CZK": "Czech Koruna",
+      "DKK": "Danish Krone", "DZD": "Algerian Dinar", "EGP": "Egyptian Pound", "FJD": "Fijian Dollar",
+      "GHS": "Ghanaian Cedi", "HRK": "Croatian Kuna", "HUF": "Hungarian Forint", "IDR": "Indonesian Rupiah",
+      "ILS": "Israeli Shekel", "JMD": "Jamaican Dollar", "JOD": "Jordanian Dinar", "KES": "Kenyan Shilling",
+      "KRW": "Korean Won", "KWD": "Kuwaiti Dinar", "KYD": "Cayman Islands Dollar", "KZT": "Kazakhstani Tenge",
+      "LKR": "Sri Lankan Rupee", "LSL": "Lesotho Loti", "MAD": "Moroccan Dirham", "MOP": "Macanese Pataca",
+      "MUR": "Mauritian Rupee", "MWK": "Malawian Kwacha", "MXN": "Mexican Peso", "MYR": "Malaysian Ringgit",
+      "MZN": "Mozambican Metical", "NAD": "Namibian Dollar", "NGN": "Nigerian Naira", "OMR": "Omani Rial",
+      "PEN": "Peruvian Sol", "PHP": "Philippine Peso", "PKR": "Pakistani Rupee", "PLN": "Polish Złoty",
+      "QAR": "Qatari Riyal", "RON": "Romanian Leu", "RSD": "Serbian Dinar", "RUB": "Russian Ruble",
+      "SAR": "Saudi Riyal", "SCR": "Seychellois Rupee", "SGD": "Singapore Dollar", "SZL": "Swazi Lilangeni",
+      "THB": "Thai Baht", "TND": "Tunisian Dinar", "TRY": "Turkish Lira", "TTD": "Trinidad & Tobago Dollar",
+      "TWD": "New Taiwan Dollar", "TZS": "Tanzanian Shilling", "UGX": "Uganda Shilling", "UYU": "Uruguayan Peso",
+      "VND": "Vietnamese Dong", "XAF": "Central African CFA Franc", "XCD": "East Caribbean Dollar",
+      "XOF": "Western African CFA Franc", "ZAR": "South African Rand", "ZMW": "Zambian Kwacha",
+      "XAU": "Gold", "XAG": "Silver", "XPT": "Platinum", "XPD": "Palladium"
+    };
+
+    const currencyFlags = {
+      "USD": "us", "GBP": "gb", "EUR": "eu", "JPY": "jp", "CAD": "ca", "CHF": "ch", "NOK": "no", "SEK": "se",
+      "AUD": "au", "NZD": "nz", "HKD": "hk", "INR": "in", "CNH": "cn", "AED": "ae", "ALL": "al", "AMD": "am",
+      "ARS": "ar", "BBD": "bb", "BDT": "bd", "BGN": "bg", "BHD": "bh", "BMD": "bm", "BND": "bn", "BRL": "br",
+      "BSD": "bs", "BWP": "bw", "CLP": "cl", "CNY": "cn", "COP": "co", "CZK": "cz", "DKK": "dk", "DZD": "dz",
+      "EGP": "eg", "FJD": "fj", "GHS": "gh", "HRK": "hr", "HUF": "hu", "IDR": "id", "ILS": "il", "JMD": "jm",
+      "JOD": "jo", "KES": "ke", "KRW": "kr", "KWD": "kw", "KYD": "ky", "KZT": "kz", "LKR": "lk", "LSL": "ls",
+      "MAD": "ma", "MOP": "mo", "MUR": "mu", "MWK": "mw", "MXN": "mx", "MYR": "my", "MZN": "mz", "NAD": "na",
+      "NGN": "ng", "OMR": "om", "PEN": "pe", "PHP": "ph", "PKR": "pk", "PLN": "pl", "QAR": "qa", "RON": "ro",
+      "RSD": "rs", "RUB": "ru", "SAR": "sa", "SCR": "sc", "SGD": "sg", "SZL": "sz", "THB": "th", "TND": "tn",
+      "TRY": "tr", "TTD": "tt", "TWD": "tw", "TZS": "tz", "UGX": "ug", "UYU": "uy", "VND": "vn", "XAF": "cm",
+      "XCD": "ag", "XOF": "sn", "ZAR": "za", "ZMW": "zm", "XAU": "", "XAG": "", "XPT": "", "XPD": ""
+    };
+
+    const dropdowns = document.querySelectorAll(".convertDropDown ul");
+    function populateDropdown(dropdown) {
+      Object.keys(currencies).forEach(code => {
+        const countryCode = currencyFlags[code] || "un";
+        const flagUrl = `https://flagcdn.com/w40/${countryCode}.png`;
+        const li = document.createElement("li");
+        li.setAttribute("data-flag", flagUrl);
+        li.setAttribute("data-code", code);
+        li.innerHTML = `<img src="${flagUrl}" alt="${code} Flag"/> ${code} - ${currencies[code]}`;
+        dropdown.appendChild(li);
+      });
+    }
+
+    const sections = document.querySelectorAll(".getNotified-form, .exchangeRateSection, .collection-hero");
+    sections.forEach(section => {
+      const emailMeDropdown = section.querySelector(".emailMe-dropdown ul");
+      const goesAboveDropdown = section.querySelector(".goesAboveDropdown ul");
+      if (emailMeDropdown) populateDropdown(emailMeDropdown);
+      if (goesAboveDropdown) populateDropdown(goesAboveDropdown);
+
+      // Select corresponding flag elements within each section
+      const emailMeFlagName = section.querySelector(".firstDropdown .currencyFlagName p");
+      const emailMeFlagImage = section.querySelector(".firstDropdown .currencyFlagImage img");
+      const goesAboveFlagName = section.querySelectorAll(".firstDropdown .currencyFlagName p")[1];
+      const goesAboveFlagImage = section.querySelectorAll(".firstDropdown .currencyFlagImage img")[1];
+      function handleDropdownSelection(dropdown, flagName, flagImage, otherDropdown) {
+        dropdown.addEventListener("click", function (event) {
+          const selectedItem = event.target.closest("li");
+          if (!selectedItem) return;
+          const selectedCode = selectedItem.getAttribute("data-code");
+          const selectedFlag = selectedItem.getAttribute("data-flag");
+          flagName.textContent = selectedCode;
+          flagImage.src = selectedFlag || defaultFlagUrl;
+          // Re-enable all items in the other dropdown
+          otherDropdown.querySelectorAll("li").forEach(li => li.classList.remove("list-disabled"));
+          // Disable selected currency in the other dropdown
+          otherDropdown.querySelectorAll("li").forEach(li => {
+            if (li.getAttribute("data-code") === selectedCode) li.classList.add("list-disabled");
+          });
+          // Close the dropdown
+          dropdown.closest(".currency-dropDown").classList.remove("open-currency");
+        });
+      }
+
+      function setDefaultSelection(dropdown, flagName, flagImage, currencyCode, otherDropdown) {
+        const defaultItem = dropdown.querySelector(`li[data-code="${currencyCode}"]`);
+        if (defaultItem) {
+          flagName.textContent = currencyCode;
+          flagImage.src = defaultItem.getAttribute("data-flag");
+          // Disable the default currency in the other dropdown
+          const otherItem = otherDropdown.querySelector(`li[data-code="${currencyCode}"]`);
+          if (otherItem) otherItem.classList.add("list-disabled");
+        }
+      }
+      if (emailMeDropdown && goesAboveDropdown) {
+        handleDropdownSelection(emailMeDropdown, emailMeFlagName, emailMeFlagImage, goesAboveDropdown);
+        setDefaultSelection(emailMeDropdown, emailMeFlagName, emailMeFlagImage, "GBP", goesAboveDropdown);
+        handleDropdownSelection(goesAboveDropdown, goesAboveFlagName, goesAboveFlagImage, emailMeDropdown);
+        setDefaultSelection(goesAboveDropdown, goesAboveFlagName, goesAboveFlagImage, "EUR", emailMeDropdown);
+      }
+    });
+
+    // Toggle dropdown on arrow click
+    document.querySelectorAll(".dropDown-arrow").forEach(arrow => {
+      arrow.addEventListener("click", function (event) {
+        const dropdownContainer = this.closest(".currency-dropDown");
+        if (dropdownContainer) {
+          document.querySelectorAll(".currency-dropDown").forEach(d => {
+            if (d !== dropdownContainer) d.classList.remove("open-currency");
+          });
+          dropdownContainer.classList.toggle("open-currency");
+        }
+        event.stopPropagation();
+      });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", function (event) {
+      if (!event.target.closest(".currency-dropDown")) {
+        document.querySelectorAll(".currency-dropDown").forEach(d => d.classList.remove("open-currency"));
+      }
+    });
+
+    //FOR EXCHANGE DROPDOWN
+    const exchangeRateSections = document.querySelectorAll(".exchangeRateSection, .collection-hero");
+    exchangeRateSections.forEach(section => {
+      section.addEventListener("click", function (event) {
+        const dropdown = event.target.closest(".exchange-dropdown");
+        if (!dropdown) return;
+        const listItem = event.target.closest("li");
+        if (listItem) {
+          dropdown.classList.add("new-selection");
+        }
+      });
+    });
+
+    //EMAIL VALIDATION 
+    var emailInput = document.querySelector(".emailField input");
+    var receiveButton = document.querySelector(".emailField .receive");
+    var formSec = document.querySelector('.form-bottom');
+    if (emailInput && receiveButton) {
+      receiveButton.addEventListener("click", function (event) {
+        var emailValue = emailInput.value.trim();
+        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        var existingError = document.querySelector(".email-error");
+        if (!emailPattern.test(emailValue)) {
+          event.preventDefault();
+          formSec.classList.add('show-error');
+        }
+      });
+      // Remove error message when user starts typing
+      emailInput.addEventListener("input", function () {
+        formSec.classList.remove('show-error');
+      });
+    }
+
+    //AMOUNT VALIDATION 
+    var amountInputs = document.querySelectorAll(".amountInput");
+    var firstDropdowns = document.querySelectorAll(".firstDropdown");
+    var receiveButton = document.querySelector(".emailField .receive");
+    if (receiveButton && amountInputs.length === firstDropdowns.length) {
+      receiveButton.addEventListener("click", function (event) {
+        var hasError = false;
+        amountInputs.forEach(function (input, index) {
+          var parentDropdown = firstDropdowns[index];
+          var value = input.value.trim();
+          if (value === "") {
+            parentDropdown.classList.add("show-error");
+            hasError = true;
+          } else {
+            parentDropdown.classList.remove("show-error");
+          }
+        });
+        if (hasError) {
+          event.preventDefault();
+        }
+      });
+      // Remove error when user starts typing
+      amountInputs.forEach(function (input, index) {
+        input.addEventListener("input", function () {
+          firstDropdowns[index].classList.remove("show-error");
+        });
+      });
+    }
+
+    //EXCHANGE RATE
+    document.querySelectorAll('.exchange-currency-symbol').forEach(symbol => {
+      console.log('found', symbol)
+      const currencyElement = symbol.previousElementSibling;
+      if (currencyElement && currencyElement.classList.contains('exchange-currency-name')) {
+        const currencyCode = currencyElement.textContent.trim();
+        if (currencyFlags[currencyCode]) {
+          const flagImg = document.createElement('img');
+          flagImg.src = `https://flagcdn.com/w40/${currencyFlags[currencyCode]}.png`;
+          flagImg.alt = `${currencyCode} Flag`;
+          flagImg.classList.add('exchange-currency-flag');
+          symbol.replaceWith(flagImg);
+        }
+      }
+    });
+
+    const addCurrencyBtns = document.querySelectorAll('.addCurrency-btn');
+    addCurrencyBtns.forEach(btn => {
+      btn.addEventListener('click', function () {
+        this.parentElement.classList.toggle('show-choose');
+      });
+    });
+
+    document.querySelectorAll('.collection-hero .collection-switch > div').forEach(div => {
+      div.addEventListener('click', function () {
+        document.querySelectorAll('.collection-hero .collection-switch > div').forEach(el => {
+          el.classList.remove('active');
+        });
+        this.classList.add('active');
+        let mainContainer = this.closest('.main-container');
+        if (mainContainer) {
+          let contentWrapper = mainContainer.querySelector('.content-wrapper');
+          if (contentWrapper) {
+            let textClass = this.textContent.trim().toLowerCase().replace(/\s+/g, '-'); // Spaces ko `-` se replace kar diya
+            contentWrapper.className = 'content-wrapper';
+            contentWrapper.classList.add(textClass);
+          }
+        }
+      });
+    });
+
+    if (window.innerWidth < 767) {
+      document.querySelector('.collection-hero .advance-content .notice').insertAdjacentElement('afterend', document.querySelector('.collection-hero .advance-content .exchange-rate-tracker'));
+    }
+    document.querySelectorAll('.collection-hero .main-container .convertDropDown li').forEach(li => {
+      li.addEventListener('click', function () {
+        let dataCode = this.getAttribute('data-code');
+        let img = this.querySelector('img');
+        let imgSrc = img ? img.getAttribute('src') : 'No image found';
+        this.closest('.currency-dropDown').querySelector('.currencyFlagName p').innerText = dataCode;
+        this.closest('.currency-dropDown').querySelector('.currencyFlagImage img').setAttribute('src', imgSrc)
+      });
+    });
+
+    document.querySelectorAll('.collection-hero .currency-change-view .change-option').forEach(option => {
+      option.addEventListener('click', function () {
+        document.querySelectorAll('.collection-hero .currency-change-view .change-option.active').forEach(activeEl => {
+          activeEl.classList.remove('active');
+        });
+        this.classList.add('active');
+      });
+    });
+
+    document.querySelectorAll('.collection-hero .main-container .add-options .currency-dropDown li').forEach(li => {
+      li.addEventListener('click', function () {
+        let dataCode = this.getAttribute('data-code');
+        let img = this.querySelector('img');
+        let imgSrc = img ? img.getAttribute('src') : 'No image found';
+        this.closest('.currency-dropDown').querySelector('.currencyFlagName p').innerText = dataCode;
+        this.closest('.currency-dropDown').querySelector('.currencyFlagImage img').setAttribute('src', imgSrc)
+      });
+    });
+  }, 500, 15000);
+
+  function waitForSwiper(trigger) {
+    var interval = setInterval(function () {
+      if (typeof Swiper !== "undefined") {
+        clearInterval(interval);
+        trigger();
+      }
+    }, 50);
+
+    setTimeout(function () {
+      clearInterval(interval);
+    }, 15000);
+  }
+  waitForSwiper(initializeSwiper);
+  waitForSwiper(ourProductsSlider);
+
+  // Swiper initialization function Learn More Section
+  function initializeSwiper() {
+    var swiper = new Swiper(".insight-slider", {
+      direction: 'horizontal',
+      spaceBetween: 10,
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      keyboard: true,
+      loop: true,
+      allowSlidePrev: true,
+      allowSlideNext: true,
+      centeredSlides: false,
+      centeredSlidesBounds: false,
+      pagination: {
+        el: '.pagination',
+        clickable: false,
+      },
+      navigation: {
+        nextEl: '.next-btn',
+        prevEl: '.prev-btn',
+      },
+    });
+  }
+
+  // Our products Slider
+  function ourProductsSlider() {
+    var swiper = new Swiper(".ouProductSlider", {
+      direction: 'horizontal',
+      spaceBetween: 20,
+      slidesPerView: 3,
+      slidesPerGroup: 1,
+      keyboard: true,
+      loop: true,
+      allowSlidePrev: true,
+      allowSlideNext: true,
+      centeredSlides: false,
+      centeredSlidesBounds: false,
+      pagination: {
+        el: '.pagination',
+        clickable: false,
+      },
+      navigation: {
+        nextEl: '.next-btn',
+        prevEl: '.prev-btn',
+      },
+      breakpoints: {
+        960: {
+          slidesPerView: 3,
+          slidesPerGroup: 1
+        },
+        0: {
+          slidesPerView: 1,
+          slidesPerGroup: 1,
+        }
+      }
+    });
+  }
+</script>
+
 </html>

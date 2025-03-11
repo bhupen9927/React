@@ -1,0 +1,2807 @@
+/* COMMON CSS START */
+
+html body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html body main {
+    background-color: #EDEDED;
+}
+
+@media screen and (min-width: 1280px) {
+
+    html body .main-container {
+        margin: 0 auto;
+        max-width: 1216px;
+    }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1279px) {
+    html body .main-container {
+        margin: 0 2rem;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html body .main-container {
+        margin: 0 1rem;
+    }
+}
+
+/* COMMON CSS END */
+
+/* GET NOTIFIED FORM CSS STARTS */
+
+html body .getNotified-form {
+    margin: 30px 0;
+    display: flex;
+}
+
+html body .getNotified-form .formContent {
+    width: calc(100% - 420px);
+    background: #000000;
+    padding: 45px;
+}
+
+html body .getNotified-form .formImage {
+    width: 420px;
+    min-width: 420px;
+}
+
+html body .getNotified-form .formImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+html body .getNotified-form .formContent {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 25px;
+}
+
+html body .getNotified-form .formTitle {
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+html body .getNotified-form .form-header>p {
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #EDEDED;
+    margin: 0;
+}
+
+html body .getNotified-form .form-checkbox {
+    display: flex;
+    align-items: center;
+    grid-gap: 12px;
+}
+
+html body .getNotified-form .form-checkbox input {
+    border: 1px solid #767676;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    background: #fff;
+    cursor: pointer;
+}
+
+html body .getNotified-form .form-checkbox input:checked::before {
+    content: "";
+    background: url(https://i.ibb.co/Ngc1CfD6/Yes.png);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+}
+
+html body .getNotified-form .form-checkbox label {
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #EDEDED;
+}
+
+
+html body .getNotified-form .form-center {
+    display: flex;
+    grid-gap: 25px;
+}
+
+html body .firstDropdown {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 8px;
+    width: calc(50% - 12.5px);
+}
+
+html body .firstDropdown>span,
+html body .form-bottom>span {
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+html body .currency-dropDown {
+    display: flex;
+    background: #FFFFFF;
+    padding: 0 12px;
+    border: 1px solid #767676;
+    align-items: center;
+    position: relative;
+}
+
+html body .getNotified-form .amountInput {
+    border: none;
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 27px;
+    letter-spacing: 0px;
+    color: #767676;
+    width: calc(100% - 120px);
+}
+
+html body .getNotified-form .amountInput:focus-visible,
+.collection-hero .main-container .currency-dropDown input:focus {
+    border: none;
+    outline: none;
+}
+
+html body .dropDown-arrow img {
+    width: 18px;
+    height: 18px;
+}
+
+html body .currencyFlagName>p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18.15px;
+    letter-spacing: 0;
+    color: #767676;
+}
+
+html body .currencyFlag {
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+    width: 120px;
+}
+
+html body .dropDown-arrow {
+    margin-left: 10px;
+    padding-left: 20px;
+    border-left: 1px solid #C9D0D5;
+    cursor: pointer;
+}
+
+html body .getNotified-form .emailField {
+    display: flex;
+    align-items: center;
+    grid-gap: 25px;
+    margin-top: 8px;
+}
+
+html body .getNotified-form .emailField>.email-container {
+    width: calc(100% - 222px);
+}
+
+html body .getNotified-form .emailField input {
+    background: #FFFFFF;
+    border: 1px solid #767676;
+    padding: 10px 12px;
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #767676;
+    width: calc(100% - 24px);
+}
+
+html body .getNotified-form .emailField .receive {
+    background: #DB0011;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    border: none;
+    width: 177px;
+}
+
+html body .getNotified-form .amount-error,
+html body .getNotified-form .email-error {
+    display: none;
+    color: #A8000B;
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+html body .getNotified-form .form-bottom.show-error .email-error,
+html body .getNotified-form .firstDropdown.show-error .amount-error {
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+}
+
+html body .getNotified-form .form-bottom.show-error .email-error {
+    position: absolute;
+}
+
+html body .convertDropDown {
+    position: absolute;
+    background: #fff;
+    padding: 20px 0;
+    top: 48px;
+    right: 0;
+    height: 200px;
+    overflow-y: auto;
+    z-index: 9;
+    display: none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.collection-hero .currency-rate-contianer [class*='change-section'] {
+    width: 108px;
+}
+
+.collection-hero .currency-rate-contianer [class*='change-section'] p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+html body .convertDropDown::-webkit-scrollbar,
+.collection-hero .currency-rate-contianer [class*='change-value'] svg rect {
+    display: none;
+}
+
+html body .currency-dropDown.open-currency .convertDropDown {
+    display: block;
+}
+
+html body .convertDropDown ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+html body .convertDropDown ul li {
+    padding: 8px 20px;
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    display: flex;
+    align-items: center;
+    grid-gap: 12px;
+    border-bottom: 1px solid rgb(243, 243, 243);
+    pointer-events: all;
+    opacity: 1;
+    cursor: pointer;
+}
+
+html body .convertDropDown li img {
+    border-radius: 50%;
+    width: 28px;
+    height: 27px;
+    object-fit: cover;
+    object-position: center;
+}
+
+html body .currencyFlagImage img {
+    border-radius: 50%;
+    width: 21px;
+    height: 21px;
+    object-fit: cover;
+    object-position: center;
+}
+
+html body .convertDropDown ul li.list-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 990px) {
+
+    html body .getNotified-form .form-center,
+    html body .getNotified-form .emailField {
+        flex-direction: column;
+    }
+
+    html body .getNotified-form .firstDropdown,
+    html body .getNotified-form .emailField .receive,
+    html body .getNotified-form .emailField>.email-container {
+        width: 100%;
+    }
+
+    html body .getNotified-form .formImage {
+        width: 350px;
+        min-width: 350px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html body .getNotified-form .formImage {
+        display: none;
+    }
+
+    html body .getNotified-form .formContent {
+        width: 100%;
+        padding: 45px 25px;
+    }
+
+    html body .getNotified-form {
+        width: calc(100% + 32px);
+        margin: 0 -16px;
+        margin-top: 25px;
+    }
+
+    html body .getNotified-form .emailField {
+        grid-gap: 10px;
+    }
+
+    html body .getNotified-form .formContent,
+    html body .getNotified-form .form-center {
+        grid-gap: 15px;
+    }
+
+    html body .getNotified-form .formTitle {
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    html body .getNotified-form .form-header>p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    html body .getNotified-form .form-bottom.show-error .email-error {
+        position: relative;
+    }
+}
+
+/* GET NOTIFIED FORM CSS ENDS */
+
+
+/* EXCHANGE RATES FORM CSS STARTS */
+
+html body .exchangeRateSection {
+    padding: 45px;
+    background: #FFFFFF;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 45px;
+}
+
+html body .exchange-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+html body .exchange-header h2 {
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 0px;
+    color: #000000;
+    padding-left: 15px;
+    margin: 0 0 25px;
+    position: relative;
+}
+
+html body .exchange-header h2::after {
+    content: '';
+    width: 3px;
+    height: 100%;
+    background: #DB0011;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+html body .exchange-header p {
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 0;
+}
+
+html body .exchange-center table {
+    width: 100%;
+}
+
+html body .exchange-center .tableHeading {
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #000000;
+    border-bottom: 2px solid #D7D8D6;
+    padding: 15px 25px;
+}
+
+html body .exchange-center .tableHeading.change,
+html body .exchange-center .tableHeading.chart {
+    color: #767676;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+html body .exchange-center .tableHeading.change>span,
+html body .exchange-center .tableHeading.chart>span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+html body .exchange-center .tableHeading:first-child,
+html body .exchange-center tr .exchange-td:first-child {
+    border-right: 1px solid #D7D8D6;
+}
+
+html body .exchange-center tr .exchange-td .exchange-currency {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+html body .exchange-center .exchange-td {
+    padding: 12px;
+    border-bottom: 1px solid #D7D8D6;
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+html body .exchange-rate-per {
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #00847F;
+}
+
+html body .exchange-rate-per[data-status="inLoss"] {
+    color: #AF000D;
+}
+
+html body .exchange-button,
+html body .exchange-show-button,
+html body .exchange-remove-button {
+    border: none;
+    background: transparent;
+}
+
+html body .exchange-button img,
+html body .exchange-show-button img,
+html body .exchange-remove-button img,
+.collection-hero .main-container .advance-content .exchange-rate-tracker .tracker-icon img {
+    width: 18px;
+    height: 18px;
+}
+
+html body .exchange-currency-flag {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+html body .exchange-timer {
+    display: flex;
+    grid-gap: 15px;
+    align-items: center;
+}
+
+html body .exchange-Icon {
+    position: relative;
+}
+
+html body .bg-circle {
+    fill: none;
+    stroke: #DB0011;
+    stroke-width: 6;
+}
+
+html body .progress-circle {
+    fill: none;
+    stroke: #EDEDED;
+    stroke-width: 6.3;
+    stroke-dasharray: 88;
+    stroke-dashoffset: 88;
+    transition: stroke-dashoffset 1s linear;
+}
+
+html body .exchange-amountInput {
+    border: 1px solid #767676;
+    background: #FFFFFF;
+    padding: 8px 12px;
+    margin-left: 16px;
+    max-width: 83px;
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #333333;
+}
+
+html body .exchange-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -45px;
+}
+
+html body .asofTime {
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #767676;
+    padding-top: 15px;
+}
+
+html body .addCurrency-btn {
+    border: none;
+    background: transparent;
+}
+
+html body .addCurrency-btn-wrapper {
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    padding: 15px 44px;
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #333333;
+}
+
+html body .addCurrency-btn-wrapper img,
+html body .addCurrency-btn-wrapper svg {
+    width: 18px;
+    height: 18px;
+}
+
+html body .addCurrency-btn-wrapper img:last-child {
+    border-left: 1px solid #C9D0D5;
+    padding-left: 6px;
+    margin-left: 5px;
+}
+
+html body .add-options {
+    display: none;
+}
+
+.collection-hero .basic-content .form-center>div:first-of-type:after {
+    content: '';
+    background-image: url(https://i.ibb.co/DDFHJTvt/Dark.png);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -25px;
+    top: 50px;
+    background-size: contain;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+
+.collection-hero .advance-content .form-center {
+    grid-gap: 15px !important;
+}
+
+.show-choose .add-options {
+    display: flex;
+    grid-gap: 24px;
+    margin-top: 40px;
+    width: 55%;
+}
+
+.show-choose .addCurrency-btn,
+html body .options-name {
+    display: none;
+}
+
+html body .exchange-dropdown {
+    display: flex;
+}
+
+html body .exchange-dropdown .currencyFlagName,
+html body .exchange-dropdown .currencyFlagImage {
+    opacity: 0;
+}
+
+html body .exchange-dropdown.new-selection .currencyFlagName,
+html body .exchange-dropdown.new-selection .currencyFlagImage {
+    opacity: 1;
+}
+
+html body .exchange-dropdown.new-selection label {
+    display: none;
+}
+
+html body .exchange-dropdown.new-selection .currencyFlag {
+    width: 100%;
+    justify-content: center;
+}
+
+html body .exchange-dropdown .dropDown-arrow {
+    border: none;
+}
+
+html body .exchange-dropdown label {
+    width: 170px;
+}
+
+html body .convertDropDown ul::before {
+    content: 'QUICK LIST';
+    margin-bottom: 10px;
+    display: block;
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    padding: 0 20px;
+}
+
+html body .convertDropDown ul li:nth-child(14),
+html body .convertDropDown ul li[data-code="XAU"] {
+    position: relative;
+    padding: 45px 20px 8px;
+}
+
+html body .convertDropDown ul li:nth-child(14)::before,
+html body .convertDropDown ul li[data-code="XAU"]::before {
+    content: 'ALL CURRENCIES';
+    margin-bottom: 10px;
+    display: block;
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+html body .convertDropDown ul li[data-code="XAU"]::before {
+    content: 'METALS';
+}
+
+html body .convertDropDown img[alt="XAU Flag"],
+html body .convertDropDown img[alt="XAG Flag"],
+html body .convertDropDown img[alt="XPT Flag"],
+html body .convertDropDown img[alt="XPD Flag"] {
+    opacity: 0;
+}
+
+html body .exchange-center .exchange-td:first-child {
+    color: #767676;
+}
+
+@media screen and (max-width: 990px) {
+    html body .exchange-center {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    html body .exchange-center::-webkit-scrollbar {
+        display: none;
+        /* For Chrome, Safari, and Edge */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html body .exchangeRateSection {
+        padding: 25px;
+    }
+
+    html body .exchange-header .exchangetitles p {
+        margin-bottom: 25px;
+    }
+
+    html body .exchange-header .exchange-timer p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    html body .exchange-header,
+    html body .exchange-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    html body .addCurrency-btn-wrapper {
+        padding: 15px 0;
+        margin-top: 40px;
+    }
+
+    html body .exchange-header h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    html body .exchange-center .tableHeading:first-child,
+    html body .exchange-center tr .exchange-td:first-child {
+        max-width: 110px;
+    }
+
+    html body .exchange-currency .exchange-currency-flag,
+    html body .addCurrency-btn-wrapper svg {
+        display: none;
+    }
+
+    html body .exchange-center tr .exchange-td .exchange-currency {
+        justify-content: flex-start;
+        grid-gap: 2px;
+    }
+
+    .exchange-currency .exchange-currency-name:last-of-type::before {
+        content: '/';
+        margin-right: 2px;
+    }
+
+    html body .exchange-center .tableHeading,
+    html body .exchange-center .exchange-td {
+        padding: 10px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    html body .exchangeRateSection {
+        grid-gap: 30px;
+    }
+
+    .show-choose .add-options {
+        flex-direction: column;
+        grid-gap: 16px;
+        width: 100%;
+    }
+
+    html body .exchange-dropdown {
+        width: 100%;
+    }
+
+
+    html body .exchange-center .tableHeading.change>span,
+    html body .exchange-center .exchange-td:first-child {
+        color: #767676;
+    }
+
+    html body .exchange-center .tableHeading.change>span,
+    html body .exchange-center .tableHeading.chart>span {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+
+    html body .exchange-center .tableHeading.change>span,
+    html body .exchange-center .tableHeading.chart>span,
+    html body .exchange-center .tableHeading,
+    html body .exchange-center .exchange-td {
+        font-size: 12px;
+    }
+}
+
+/* EXCHANGE RATES FORM CSS ENDS */
+
+/* OUR PRODUCTS CSS STARTS */
+
+html body .ourProductSection {
+    padding: 85px 75px;
+    background: #FFFFFF;
+    position: relative;
+}
+
+html body .ourProductSection .ourProduct-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+html body .ourProductSection .ourProductsTitle {
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 0px;
+    color: #000000;
+    padding-left: 15px;
+    margin: 0;
+    position: relative;
+}
+
+html body .ourProductSection .ourProductsTitle::after {
+    content: '';
+    width: 3px;
+    height: 100%;
+    background: #DB0011;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+html body .ourProductSection .talkToExpert {
+    background: #4D6474;
+    min-height: 44px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+html body .ourProductSection .productImage {
+    overflow: hidden;
+    position: relative;
+}
+
+html body .ourProductSection .ourProduct-image img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+html body .ourProductSection .ourProduct-logo img {
+    width: 45px;
+    height: 45px;
+}
+
+html body .ourProductSection .ourProduct-title {
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+html body .ourProductSection .product-para {
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    display: flex;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+html body .product-para svg {
+    width: 18px;
+    height: 18px;
+    fill: #fff
+}
+
+html body .ourProductSection .product-des {
+    font-family: "UniversNext", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    display: none;
+}
+
+html body .ourProduct-wrapper>a:hover .product-des {
+    display: block;
+}
+
+html body .ourProductSection .ouProductSlider {
+    position: relative;
+    overflow: hidden;
+}
+
+html body .ourProductSection .next-btn {
+    right: 20px;
+}
+
+html body .ourProductSection .prev-btn {
+    left: 20px;
+}
+
+html body .ourProductSection .next-btn::after,
+html body .ourProductSection .prev-btn::after {
+    font-size: 25px;
+    color: #DB0011;
+    ;
+}
+
+html body .ourProductSection .ourProduct-content {
+    bottom: 0;
+    position: absolute;
+    padding: 25px;
+    transition: min-height .4s ease-out, bottom .25s ease-out, padding-bottom .25s ease-out, transform .25s ease-out, -webkit-transform .25s ease-out;
+}
+
+html body .ourProductSection .ourProductOverlay {
+    background-image: linear-gradient(180deg, transparent 36%, rgba(0, 0, 0, .75) 70%);
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    transition: background-color .4s ease-out;
+}
+
+html body .ourProduct-wrapper>a:hover .ourProductOverlay {
+    background-color: rgba(0, 0, 0, .9);
+    background-image: unset;
+    transition: background-color .4sease-out;
+}
+
+html body .ourProductSection .pagination {
+    display: none;
+}
+
+@media screen and (max-width: 1025px) {
+    html body .ourProductSection {
+        padding: 35px 25px;
+    }
+
+    html body .ourProductSection .ourProduct-image img {
+        height: 365px;
+    }
+
+    html body .ourProductSection .product-para {
+        font-size: 16px;
+        line-height: 1.25rem;
+        margin-bottom: 25px;
+    }
+
+    html body .ourProductSection .ourProduct-logo img {
+        width: 32px;
+        height: 32px;
+    }
+
+    html body .ourProductSection .ourProduct-content {
+        padding: 0 16px 25px;
+    }
+
+    html body .ourProductSection .product-des {
+        display: block;
+    }
+
+    html body .ourProductSection .ouProductSlider {
+        padding-bottom: 80px;
+    }
+
+    html body .ourProductSection .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 18px;
+    }
+
+    html body .ourProductSection .pagination span.swiper-pagination-bullet-active {
+        background: #DB0011 !important;
+    }
+
+    html body .ourProductSection .pagination span {
+        border-radius: unset !important;
+        position: relative;
+    }
+
+    html body .ourProductSection .prev-btn {
+        left: 25px;
+        bottom: 34px;
+        top: unset;
+    }
+
+    html body .ourProductSection .next-btn {
+        right: 25px;
+        top: unset;
+        bottom: 34px;
+    }
+
+    html body .ourProductSection .next-btn,
+    html body .ourProductSection .prev-btn {
+        width: 44px;
+        background: #4D6474 !important;
+        height: 44px;
+        display: flex
+    }
+
+    html body .ourProductSection .next-btn::after,
+    html body .ourProductSection .prev-btn::after {
+        color: #FFFFFF;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    html body .ourProductSection .ourProduct-image img {
+        width: 100%;
+        height: 350px;
+    }
+
+    html body .ourProductSection .product-para {
+        font-size: 23px;
+        line-height: 30px;
+    }
+
+    html body .ourProductSection .product-des {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+
+    html body .ourProductSection .ourProduct-content {
+        padding: 25px;
+    }
+
+    html body .ourProductSection .ourProduct-logo img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    html body .ourProductSection .talkToExpert {
+        display: none;
+    }
+
+    html body .ourProductSection .ourProduct-image img {
+        height: 390px;
+    }
+
+    html body .ourProductSection .ourProductsTitle {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    /* html body .ourProductSection .product-para {
+        font-size: 16px;
+        line-height: 24px;
+    } */
+}
+
+/* OUR PRODUCTS CSS ENDS */
+
+/* MULTI AWARD CSS START */
+
+html body .multiaward-sectionContainer {
+    padding: 65px 0;
+}
+
+html body .multiaward-sectionContainer .multiAward-headingText {
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 0px;
+    color: #000000;
+    padding-left: 15px;
+    margin: 0 0 45px;
+    position: relative;
+}
+
+html body .multiaward-sectionContainer .multiAward-headingText::after {
+    content: '';
+    width: 3px;
+    height: 100%;
+    background: #DB0011;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+html body .main-container .award-sectionwrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+html body .main-container .award-sectionwrapper img[alt="Finance-Asia-Award"] {
+    width: 130px;
+}
+
+html body .main-container .award-sectionwrapper img[alt="euromoney-Award"] {
+    width: 80px;
+}
+
+@media screen and (max-width: 960px) {
+    html body .main-container .award-sectionwrapper {
+        grid-column-gap: 131px;
+        grid-row-gap: 25px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html body .multiaward-sectionContainer {
+        padding: 55px 0;
+    }
+
+    html body .main-container .award-sectionwrapper {
+        grid-column-gap: 25px;
+    }
+
+    html body .main-container .award-sectionwrapper img[alt="Finance-Asia-Award"] {
+        width: 110px;
+    }
+
+    html body .main-container .award-sectionwrapper img[alt="euromoney-Award"] {
+        width: 60px;
+    }
+
+    html body .multiaward-sectionContainer .multiAward-headingText {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+    html body .main-container .award-sectionwrapper img[alt="euromoney-Award"]:nth-of-type(2) {
+        order: -3;
+    }
+
+    html body .main-container .award-sectionwrapper img[alt="Finance-Asia-Award"]:nth-of-type(3) {
+        order: -2;
+    }
+
+    html body .main-container .award-sectionwrapper img[alt="euromoney-Award"]:nth-of-type(4) {
+        order: -1;
+    }
+
+    html body .main-container .award-sectionwrapper img[alt="Finance-Asia-Award"]:nth-of-type(5) {
+        order: 1;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    html body .main-container .award-sectionwrapper {
+        grid-gap: 22px;
+    }
+}
+
+/* MULTI AWARD CSS END */
+
+/*  LEARN MORE CSS START */
+
+html body .insight-sectionWrapper {
+    padding: 45px 0;
+}
+
+html body .insight-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 32px;
+}
+
+html body .insight-sectionWrapper .insight-mainTitle {
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 0px;
+    color: #000000;
+    padding-left: 15px;
+    margin: 0 0 45px;
+    position: relative;
+}
+
+html body .insight-sectionWrapper .insight-mainTitle::after {
+    content: '';
+    width: 3px;
+    height: 100%;
+    background: #DB0011;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+html body .insight-sectionWrapper .insight-description {
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 0 0 45px;
+    max-width: 580px;
+}
+
+html body .insight-sectionWrapper .insight-card-content {
+    padding: 25px;
+    grid-gap: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+}
+
+html body .insight-sectionWrapper .gray-section {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #D7D8D6;
+    padding-bottom: 15px;
+}
+
+html body .insight-sectionWrapper .gray-section span {
+    color: var(--Brand-Charcoal, #333);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "UniversNext", Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+html body .insight-sectionWrapper .gray-section .time-section {
+    color: var(--Brand-Pewter, #767676);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "UniversNext", Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+html body .insight-sectionWrapper .insight-heading h2 {
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 31px;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 0;
+}
+
+html body .insight-sectionWrapper .insight-heading p {
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 15px 0 0;
+}
+
+html body .insight-sectionWrapper .insightCardCta {
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    padding: 10px 20px;
+    background: #FFFFFF;
+    border: 1px solid #333333;
+    max-width: fit-content;
+}
+
+html body .insight-sectionWrapper .insightCardCta span {
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+html body .insight-sectionWrapper .insightCardCta svg {
+    width: 18px;
+    fill: #333;
+}
+
+html body .image-section {
+    overflow: hidden;
+    position: relative;
+}
+
+html body .insight-card-img img {
+    width: 100%;
+}
+
+html body .insight-slider .pagination,
+html body .insight-slider .next-btn,
+html body .insight-slider .prev-btn {
+    display: none;
+}
+
+@media only screen and (max-width:767px) {
+    html body .insight-sectionWrapper {
+        width: unset !important;
+        max-width: unset !important;
+    }
+
+    html body .insight-sectionWrapper .insight-heading h2 {
+        font-size: 19px;
+        line-height: 27px;
+    }
+
+    html body .insight-sectionWrapper .insight-mainTitle {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    html body .image-section {
+        width: 100%;
+        max-width: calc(33% - 25px);
+        position: relative;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width:960px) {
+    html body .insight-sectionWrapper {
+        padding: 40px 0 150px;
+        position: relative;
+    }
+
+    html body .insight-sectionWrapper .insight-slider {
+        overflow: hidden;
+    }
+
+    html body .insight-sectionWrapper .next-btn,
+    html body .insight-sectionWrapper .prev-btn {
+        width: 44px;
+        background: #4D6474 !important;
+        height: 44px;
+        display: flex;
+        bottom: 60px
+    }
+
+    html body .insight-sectionWrapper .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 74px;
+    }
+
+    html body .insight-sectionWrapper .pagination span.swiper-pagination-bullet-active {
+        background: #DB0011 !important;
+    }
+
+    html body .insight-sectionWrapper .pagination span {
+        border-radius: unset !important;
+        position: relative;
+    }
+
+    html body .insight-sectionWrapper .prev-btn {
+        top: unset;
+        left: unset;
+    }
+
+    html body .insight-sectionWrapper .next-btn {
+        top: unset;
+        right: 0;
+    }
+
+    html body .insight-sectionWrapper .prev-btn::after,
+    html body .insight-sectionWrapper .next-btn::after {
+        font-size: 20px !important;
+        color: white;
+    }
+
+    html body .insight-sectionWrapper .prev-btn::after {
+        content: 'prev';
+        font-family: swiper-icons;
+        font-size: var(--swiper-navigation-size);
+        text-transform: none !important;
+        letter-spacing: 0;
+        font-variant: initial;
+        line-height: 1;
+    }
+
+    html body .insight-sectionWrapper .next-btn::after {
+        content: 'next';
+        font-family: swiper-icons;
+        font-size: var(--swiper-navigation-size);
+        text-transform: none !important;
+        letter-spacing: 0;
+        font-variant: initial;
+        line-height: 1;
+    }
+
+    html body .insight-container {
+        grid-gap: unset;
+        justify-content: unset;
+    }
+
+    html body .image-section {
+        max-width: unset !important;
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+    html body .insight-sectionWrapper .next-btn,
+    html body .insight-sectionWrapper .prev-btn {
+        bottom: 60px;
+    }
+
+    html body .insight-sectionWrapper .pagination {
+        bottom: 74px;
+    }
+}
+
+/*  LEARN MORE CSS END */
+
+
+/*  FAQ SECTION CSS START */
+
+
+html body .faq-container {
+    margin: 20px 0;
+    background-color: #FFFFFF;
+    padding: 85px 105px;
+}
+
+html body .faq-container .faq-title {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 0px;
+    color: #000000;
+    position: relative;
+    margin: 0 0 30px;
+    padding-left: 15px;
+    font-family: "UniversNext", Arial, sans-serif;
+}
+
+html body .faq-container .faq-title::after {
+    content: '';
+    width: 3px;
+    height: 100%;
+    background: #DB0011;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+html body .faq-container .faq-itm {
+    border-top: 1px solid #767676;
+    padding: 25px 0;
+}
+
+html body .faq-container .faq-qst {
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    width: 100%;
+    padding: 0;
+    cursor: pointer;
+}
+
+html body .faq-container .faq-qst span {
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 27px;
+    letter-spacing: 0px;
+    color: #000000;
+    text-align: left;
+}
+
+html body .faq-container .faq-qst svg {
+    width: 25px;
+    fill: #333;
+    transform: rotate(90deg);
+}
+
+html body .faq-container .faq-itm.faq-open .faq-qst svg {
+    transform: rotate(270deg);
+}
+
+html body .faq-container .faq-answer-box {
+    display: none;
+}
+
+html body .faq-container .faq-itm.faq-open .faq-answer-box {
+    display: flex;
+    flex-direction: column;
+}
+
+html body .faq-container .faq-answer-box p {
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #000000;
+    max-width: 715px;
+}
+
+html body .faq-container .faq-feedback-section {
+    display: flex;
+    align-items: center;
+    grid-gap: 25px;
+}
+
+html body .faq-container .faq-feedback-section p,
+html body .faq-container .faq-feedback-section span {
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+html body .faq-container .faq-feedback-section span {
+    display: flex;
+    align-items: center;
+    grid-gap: 15px;
+}
+
+html body .faq-container .faq-feedback-section span img {
+    width: 18px;
+    height: 18px;
+}
+
+@media screen and (max-width: 960px) {
+    html body .faq-container {
+        padding: 40px 24px;
+    }
+
+    html body .faq-container .faq-qst span,
+    html body .faq-container .faq-answer-box p {
+        padding-right: 60px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    html body .faq-container {
+        margin: 0;
+        padding: 25px;
+    }
+
+    html body .faq-container .faq-answer-box p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    html body .faq-container .faq-feedback-section p {
+        width: 100%;
+    }
+
+    html body .faq-container .faq-feedback-section {
+        flex-wrap: wrap;
+        grid-gap: 12px;
+        align-items: flex-start;
+    }
+
+    html body .faq-container .faq-qst svg {
+        min-width: 25px;
+    }
+
+    html body .faq-container .faq-title {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    html body .faq-container .faq-qst span {
+        font-size: 16px;
+        line-height: 20px;
+        padding-right: 40px;
+    }
+}
+
+/*  FAQ SECTION CSS END */
+
+/* FX TRENDS SECTION CSS */
+html body .promo-card__fx-trends .promo-card__trend-heading {
+    font-family: "UniversNext", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: 0px;
+    color: #000000;
+    padding-left: 15px;
+    margin: 0 0 25px;
+    position: relative;
+}
+
+html body .promo-card__fx-trends .promo-card__trend-heading:after,
+html body .promo-card__fx-trends .promo-card__right-section .promo-card__video h2:after,
+html body .promo-card__fx-trends .promo-card__right-section .promo-card__podcasts>h2:after {
+    content: '';
+    width: 3px;
+    height: 100%;
+    background: #DB0011;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+html body .promo-card__fx-trends .promo-card__right-section .promo-card__podcasts>h2 {
+    padding-left: 20px;
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+html body .promo-card__fx-trends {
+    padding: 45px;
+    background: #FFFFFF;
+    flex-direction: row;
+    display: flex;
+    grid-gap: 40px;
+}
+
+html body .promo-card__fx-trends .promo-card__publish-date {
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+html body .promo-card__fx-trends .promo-card__publish-date span,
+html body .promo-card__fx-trends .promo-card__tabs-content .short-term-direction .short span {
+    font-weight: 700;
+}
+
+html body .promo-card__fx-trends .promo-card__content-container>p:not(:last-of-type),
+html body .promo-card__fx-trends .promo-card__right-section .promo-card__video h2,
+html body .promo-card__fx-trends .promo-card__right-section .promo-card__podcasts>h2 {
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 31px;
+    letter-spacing: 0px;
+    color: #000000;
+    position: relative;
+}
+
+html body .promo-card__fx-trends .promo-card__content-container>p:not(:last-of-type) {
+    margin-top: 45px;
+}
+
+html body .promo-card__fx-trends .promo-card__content-container>p:last-of-type,
+html body .promo-card__fx-trends .promo-card__content-container>span,
+html body .promo-card__fx-trends .promo-card__content-container .promo-card__list li,
+html body .promo-card__fx-trends .promo-card__right-section .promo-card__podcasts p {
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+html body .promo-card__fx-trends .promo-card__content-container>p:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+html body .promo-card__fx-trends .promo-card__content-container .promo-card__list {
+    padding-left: 23px;
+    margin-top: 11px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 10px;
+}
+
+html body .promo-card__fx-trends .promo-card__content-container>p:last-of-type {
+    margin-top: 45px;
+}
+
+html body .promo-card__fx-trends .promo-card__tabs-wrapper .promo-card__tabs {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 10px;
+    flex-wrap: wrap;
+}
+
+html body .promo-card__fx-trends .promo-card__tabs-wrapper .promo-card__tab {
+    color: #000000;
+    padding: 10px 25px;
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    background: #FFFFFF;
+    border-radius: 22px;
+    border: 1px solid #000000;
+    cursor: pointer;
+}
+
+html body .promo-card__fx-trends .promo-card__tabs-wrapper .promo-card__tab.active {
+    background: #000000;
+    color: #FFFFFF;
+}
+
+html body .promo-card__fx-trends .promo-card__tabs-content .short-term-direction {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 43px;
+    align-items: center;
+    padding: 25px;
+    background: #F3F3F3;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+
+html body .promo-card__fx-trends .promo-card__tabs-content .short-term-direction .country h2 {
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 0px;
+}
+
+html body .promo-card__fx-trends .promo-card__tabs-content .short-term-direction .short,
+html body .promo-card__fx-trends .promo-card__tabs-content .short-term-direction .current-structure>div {
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+html body .promo-card__fx-trends .promo-card__tabs-content .short-term-direction .current-structure {
+    display: flex;
+    grid-gap: 45px;
+}
+
+html body .promo-card__fx-trends .promo-card__tabs-content .short-term-direction .current-structure>div {
+    color: #333333;
+}
+
+html body .promo-card__fx-trends .promo-card__tabs-content .promo-card__para {
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    margin-bottom: 45px;
+}
+
+html body .promo-card__fx-trends .promo-card__right-section .promo-card__video p {
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+html body .promo-card__fx-trends .promo-card__right-section .promo-card__video .promo-card__date {
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #767676;
+    display: flex;
+    justify-content: space-between;
+}
+
+html body .promo-card__fx-trends .promo-card__tabs-content .accordion .accordion-item-desc>p,
+html body .promo-card__fx-trends .promo-card__tabs-content .accordion .accordion-item-desc .list li {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: justify;
+    margin: 0.75rem 0;
+    color: #333333;
+    font-family: Univers Next for HSBC, sans-serif;
+}
+
+html body .promo-card__fx-trends .promo-card__tabs-content .accordion .accordion-item-desc .info-icon svg {
+    width: 10px;
+    height: 10px;
+}
+
+html body .promo-card__fx-trends .promo-card__tabs-content .accordion .accordion-item-desc>h4 {
+    color: #333333;
+    font-family: Univers Next for HSBC, sans-serif;
+    margin: 0px;
+}
+
+html body .promo-card__fx-trends .promo-card__tabs-content .accordion .accordion-item-desc .list {
+    margin: 0px;
+    padding-left: 15px;
+}
+
+html body .promo-card__fx-trends .promo-card__right-section .promo-card__podcasts .promo-card__audio {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 15px;
+}
+
+html body .promo-card__fx-trends .promo-card__right-section .logo-container img {
+    width: 100%;
+    height: 100%;
+}
+
+html body .promo-card__fx-trends .promo-card__right-section .logo-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    grid-gap: 15px;
+}
+
+html body .promo-card__fx-trends .promo-card__right-section .promo-card__podcasts .promo-card__audio-box {
+    background: #000000;
+    padding: 15px;
+}
+
+html body .promo-card__fx-trends .promo-card__right-section .promo-card__audio-box .promo__image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+html body .promo-card__fx-trends .promo-card__right-section .promo-card__audio-box .wave img {
+    width: 112px;
+    height: 44px;
+}
+
+html body .promo-card__fx-trends .promo-card__right-section .promo-card__audio-box .pause img {
+    width: 44px;
+    height: 44px;
+}
+
+html body .promo-card__fx-trends .promo-card__right-section .promo-card__audio-box>h2 {
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+html body .promo-card__fx-trends .promo-card__right-section .promo-card__audio-box>.promo-card__date {
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #D7D8D6;
+    display: flex;
+    justify-content: space-between;
+}
+
+html body .promo-card__fx-trends .promo-card__tabs-content .accordion .accordion-item-desc .list li {
+    margin: 0.25rem 0;
+}
+
+html body .promo-card__fx-trends .promo-card__right-section .promo-card__video h2 {
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+html body .promo-card__fx-trends .promo-card__right-section {
+    width: 100%;
+    max-width: 330px;
+}
+
+html body .promo-card__fx-trends .promo-card__right-section iframe {
+    width: 330px;
+    height: 190px;
+}
+
+@media only screen and (min-width:767px) and (max-width:992px) {
+    html body .promo-card__fx-trends .promo-card__right-section {
+        max-width: 330px;
+    }
+
+    html body .promo-card__fx-trends .promo-card__right-section iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    html body .promo-card__fx-trends {
+        flex-direction: column;
+        padding: 25px;
+        grid-gap: 30px;
+    }
+
+    html body .promo-card__fx-trends .promo-card__right-section {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    html body .promo-card__fx-trends .promo-card__right-section iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    html body .promo-card__fx-trends .promo-card__trend-heading {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    html body .promo-card__fx-trends .promo-card__content-container>p:not(:last-of-type),
+    html body .promo-card__fx-trends .promo-card__right-section .promo-card__video h2,
+    html body .promo-card__fx-trends .promo-card__right-section .promo-card__podcasts>h2 {
+        font-size: 19px;
+        line-height: 27px;
+    }
+
+    html body .main-container .accordion-item .accordion-item-title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    html body .promo-card__fx-trends .promo-card__content-container>p:not(:last-of-type),
+    html body .promo-card__fx-trends .promo-card__content-container>p:last-of-type,
+    html body .promo-card__fx-trends .promo-card__right-section .promo-card__podcasts>h2 {
+        margin-top: 25px;
+    }
+
+    html body .promo-card__fx-trends .promo-card__tabs-content .promo-card__para {
+        margin-bottom: 25px;
+    }
+
+    .main-container .accordion-item .accordion-item-title {
+        padding: 14px 0px;
+    }
+
+    html body .promo-card__fx-trends .promo-card__right-section .promo-card__podcasts>h2 {
+        margin-bottom: 30px;
+    }
+
+    html body .promo-card__fx-trends .promo-card__right-section .logo-container {
+        flex-direction: column;
+        grid-gap: 10px;
+    }
+
+    html body .promo-card__fx-trends .promo-card__right-section .logo-container img {
+        height: 48px;
+        width: fit-content;
+    }
+
+    html body .promo-card__fx-trends .promo-card__right-section .logo-container>a {
+        background: #000000;
+        border-radius: 8px;
+        display: flex;
+    }
+
+    html body .promo-card__fx-trends .promo-card__tabs-content .short-term-direction {
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 15px;
+        flex-direction: column;
+        grid-gap: 15px;
+    }
+}
+
+/* FX TRENDS SECTION CSS END*/
+
+/* accoedion css */
+.main-container .accordion-item {
+    background: #FFFFFF;
+    border-top: 1px solid #767676
+}
+
+.main-container .accordion-item .accordion-item-title {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    padding: 15px 0px;
+    align-items: center;
+    margin: 0px;
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 27px;
+    letter-spacing: 0px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.main-container .accordion-item .accordion-item-desc {
+    display: none;
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 300;
+    color: #191919;
+    box-sizing: border-box;
+    padding-left: 0px;
+}
+
+.main-container .accordion-item input[type="checkbox"] {
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.main-container .accordion-item input[type="checkbox"]:checked~.accordion-item-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container .accordion-item .accordion-item-title .icon svg {
+    width: 20px;
+    height: 20px;
+    fill: #333333;
+    transform: rotate(0);
+}
+
+html body .promo-card__fx-trends .promo-card__tabs-content .short-term-direction svg {
+    width: 15px;
+    height: 15px;
+}
+
+html body .promo-card__fx-trends .promo-card__tabs-content .short-term-direction .previous svg {
+    transform: rotate(90deg);
+    position: relative;
+    top: 2px;
+}
+
+html body .promo-card__fx-trends .promo-card__tabs-wrapper.tab-eur .current svg,
+html body .promo-card__fx-trends .promo-card__tabs-wrapper.tab-gbp .current svg {
+    transform: rotate(180deg);
+    position: relative;
+    top: 3px;
+    fill: rgb(168, 0, 11) !important;
+}
+
+html body .promo-card__fx-trends .promo-card__tabs-content .short-term-direction .current svg {
+    fill: #00847F;
+}
+
+.main-container .accordion-item .accordion-item-title .icon svg [data-name="Bounding box"],
+html body .promo-card__fx-trends .promo-card__tabs-content .short-term-direction #controlPlay rect {
+    fill: none;
+}
+
+.main-container .accordion-item input[type="checkbox"]:checked~.accordion-item-title .icon svg {
+    transform: rotate(180deg);
+}
+
+.main-container .accordion-item:first-child {
+    margin-top: 0;
+}
+
+.main-container .accordion-item-desc {
+    padding: 10px;
+    color: white !important;
+}
+
+.main-container .accordion-item-desc .tested-tried-heading h2 {
+    color: white !important;
+}
+
+.main-container .accordion-title {
+    color: #6E6F71 !important;
+}
+
+/* accordion css end */
+
+/* HEROSECTION CSS */
+
+.collection-hero .collections-hero__heading {
+    font-family: Univers Next for HSBC, SANS-SERIF;
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 66px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 0px;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+
+.collection-hero {
+    background: #000000;
+}
+
+.collection-hero .container-new {
+    width: 100%;
+    max-width: 990px;
+    margin: auto;
+}
+
+.collection-hero .collections-hero__subheading {
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-bottom: 44px;
+}
+
+.collection-hero .main-container .collection-switch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.collection-hero .main-container .collection-switch>div {
+    background: #EDEDED;
+    width: 215px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.collection-hero .main-container .collection-switch span {
+    color: #767676;
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 27px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.collection-hero .main-container .collection-switch>div.active {
+    background: #FFFFFF !important;
+}
+
+.collection-hero .main-container .collection-switch>div.active span {
+    color: #000000 !important;
+}
+
+.collection-hero .main-container .content-continer {
+    background: #FFFFFF;
+    padding: 25px;
+    display: none;
+}
+
+.collection-hero .main-container .content-wrapper.basic .basic-content,
+.collection-hero .main-container .content-wrapper.advanced .advance-content {
+    display: block !important;
+}
+
+.collection-hero .main-container .form-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-gap: 30px;
+}
+
+.collection-hero .main-container .firstDropdown {
+    width: 100%;
+    padding: 5px;
+    background: #F3F3F3;
+    position: relative;
+}
+
+.collection-hero .main-container .firstDropdown>span {
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #767676;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.collection-hero .main-container .currency-dropDown {
+    border: 1px solid #767676;
+    background: #FFFFFF;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.collection-hero .main-container .currency-dropDown input {
+    font-family: Univers Next for HSBC;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0px;
+    color: #000000;
+    border: unset;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.collection-hero .main-container .currency-dropDown .currencyFlag {
+    display: flex;
+    grid-gap: 15px;
+    margin-right: 15px;
+    width: fit-content;
+}
+
+.collection-hero .main-container .add-options .exchange-dropdown .currency-dropDown {
+    background: #F3F3F3;
+    height: 50px;
+    border: unset;
+}
+
+.collection-hero .main-container .add-options .exchange-dropdown {
+    border: 1px solid #767676;
+}
+
+.collection-hero .main-container .currency-dropDown .currencyFlagName p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    color: #767676;
+}
+
+.collection-hero .main-container .currency-dropDown .currencyFlagImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.collection-hero .main-container .addCurrency-btn-wrapper svg {
+    border-bottom: 1px solid #C9D0D5;
+    margin-left: 0px !important;
+    padding-left: 8px;
+    transform: rotate(90deg);
+    padding-bottom: 8px;
+    fill: #333333;
+    ;
+}
+
+.collection-hero .currency-rate-contianer [class*='change-value'] svg {
+    width: 18px;
+    height: 18px;
+    fill: #00847F;
+}
+
+.collection-hero .main-container .currency-icon span {
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #767676;
+}
+
+.collection-hero .main-container .currency-dropDown .dropDown-arrow img {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 3px;
+}
+
+.collection-hero .main-container .currency-dropDown .dropDown-arrow {
+    padding-left: 8px;
+    margin-left: 0px;
+}
+
+.collection-hero .main-container .currency-dropDown .currencyFlagImage:after {
+    content: '';
+    width: 1.5px;
+    height: 60%;
+    background: #C9D0D5;
+    position: relative;
+    right: -14px;
+}
+
+.collection-hero .main-container .currency-dropDown.open-currency .convertDropDown {
+    display: flex !important;
+    left: 0px;
+}
+
+.collection-hero .currency-rate-contianer .rate-section .rate-label,
+.collection-hero .currency-rate-contianer .change-section .change-label,
+.collection-hero .currency-rate-contianer .weekly-change-section .weekly-change-label {
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.collection-hero .currency-rate-contianer .change-section .change-label span,
+.collection-hero .currency-rate-contianer .weekly-change-section .weekly-change-label span {
+    color: #767676;
+}
+
+.collection-hero .currency-rate-contianer .start-rate,
+.collection-hero .currency-rate-contianer .change-value,
+.collection-hero .currency-rate-contianer .weekly-change-value {
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 31px;
+    letter-spacing: 0px;
+    color: #000000;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.collection-hero .currency-rate-contianer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.collection-hero .currency-rate-contianer .wrapper-elem {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 45px;
+}
+
+.collection-hero .currency-rate-contianer .exchange-rate-tracker {
+    background: #F3F3F3;
+    padding: 12px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.collection-hero .currency-rate-contianer .exchange-rate-tracker .tracker-icon img {
+    width: 18px;
+    height: 18px;
+}
+
+.collection-hero .currency-rate-contianer .exchange-rate-tracker .tracker-text,
+.collection-hero .main-container .advance-content .exchange-rate-tracker .tracker-text {
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    margin: 0px;
+    margin-left: 15px;
+    color: #333333;
+}
+
+.collection-hero .currency-change-view .change-view-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.collection-hero .currency-change-view {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.collection-hero .currency-change-view .summary-title {
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.collection-hero .currency-change-view .summary-details {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 40px;
+}
+
+.collection-hero .currency-change-view .change-view-title span {
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #000000;
+    margin-bottom: 12px;
+    display: flex;
+}
+
+.collection-hero .currency-change-view .change-view-options {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 5px;
+}
+
+.collection-hero .currency-change-view .change-option span {
+    border: 1px solid #EDEDED;
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #767676;
+    width: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    cursor: pointer;
+}
+
+.collection-hero .currency-change-view .change-option.active span {
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+.collection-hero .currency-change-view .summary-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.collection-hero .currency-change-view .summary-label {
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    color: #767676;
+}
+
+.collection-hero .currency-change-view .summary-value {
+    font-family: Univers Next for HSBC, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #000000;
+    margin-top: 5px;
+}
+
+.collection-hero .main-container .exchange-footer {
+    margin-top: 0px;
+    height: 110px;
+    width: 199px;
+    padding: 0px;
+    background: #F3F3F3;
+    position: relative;
+}
+
+.collection-hero .main-container .addCurrency-btn-wrapper {
+    padding: 5px;
+    height: 90px;
+    width: 175px;
+    border: 1px solid #D7D8D6;
+    font-size: 16px;
+    line-height: 24px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.collection-hero .main-container .add-options {
+    flex-direction: column;
+    margin-top: 0px;
+    width: 100%;
+    position: absolute;
+    top: 120px;
+    grid-gap: 10px;
+}
+
+html body .promo-card__fx-trends .promo-card__tabs-content .short-term-direction .country {
+    display: flex;
+    flex-direction: row;
+}
+
+html body .promo-card__fx-trends .short-term-direction .country .logo {
+    display: flex;
+    flex-direction: row;
+    border-radius: 100px;
+    align-items: center;
+}
+
+html body .promo-card__fx-trends .short-term-direction .country .logo img {
+    width: 26px;
+    height: 26px;
+    border-radius: 100px;
+    margin-left: 10px;
+    object-fit: cover;
+}
+
+.collection-hero .show-choose .addCurrency-btn {
+    display: block !important;
+}
+
+.collection-hero .main-container .add-options .currency-dropDown .currencyFlagName,
+.collection-hero .main-container .add-options .currency-dropDown .currencyFlagImage {
+    display: none;
+}
+
+.collection-hero .main-container .add-options .new-selection .currencyFlagName,
+.collection-hero .main-container .add-options .new-selection .currencyFlagImage {
+    display: block !important;
+}
+
+@media only screen and (max-width:767px) {
+    .collection-hero .collections-hero__heading {
+        font-size: 33px;
+        line-height: 40px;
+        padding-left: 15px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .collection-hero .currency-rate-contianer .exchange-rate-tracker .tracker-icon img {
+        position: relative;
+        top: 2px;
+    }
+
+    html body .promo-card__fx-trends .short-term-direction .country .logo img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .collection-hero .collections-hero__subheading {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        padding-left: 15px;
+        margin-bottom: 22px;
+    }
+
+    .collection-hero .main-container .collection-switch>div {
+        width: 100%;
+    }
+
+    .collection-hero .main-container .collection-switch span {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .collection-hero .main-container .form-center,
+    .collection-hero .currency-rate-contianer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .collection-hero .main-container {
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 25px;
+    }
+
+    .collection-hero .currency-rate-contianer .weekly-change-section,
+    .collection-hero .currency-change-view .change-view-title,
+    .collection-hero .basic-content .form-center>div:first-of-type:after {
+        display: none;
+    }
+
+    .collection-hero .currency-change-view {
+        margin-top: 16px;
+        flex-direction: column;
+        grid-gap: 36px;
+    }
+
+    .collection-hero .currency-change-view .summary-title {
+        margin-bottom: 10px;
+    }
+
+    .collection-hero .currency-change-view .summary-value {
+        margin-top: 0px;
+    }
+
+    .collection-hero .currency-change-view .previous-summary {
+        padding: 0px 15px;
+    }
+
+    .collection-hero .currency-change-view .summary-details {
+        grid-gap: 29px;
+    }
+
+    .collection-hero .main-container .content-continer {
+        padding: 12px;
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+
+    .collection-hero .currency-change-view .change-option span {
+        font-size: 12px;
+        line-height: 100%;
+        width: 61px;
+        height: 35px;
+    }
+
+    .collection-hero .currency-change-view .change-view-options {
+        flex-wrap: wrap;
+    }
+
+    .collection-hero .main-container .form-center {
+        grid-gap: 10px;
+    }
+
+    .collection-hero .main-container .firstDropdown {
+        width: fit-content;
+    }
+
+    .collection-hero .currency-rate-contianer .start-rate,
+    .collection-hero .currency-rate-contianer .change-value,
+    .collection-hero .currency-rate-contianer .weekly-change-value {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .collection-hero .currency-rate-contianer {
+        align-items: flex-start;
+    }
+
+    .collection-hero .currency-rate-contianer .wrapper-elem {
+        justify-content: space-between;
+        width: 100%;
+        padding: 0px 10px;
+        margin-bottom: 15px;
+        grid-gap: 15px;
+        width: 94%;
+    }
+
+    .collection-hero .currency-rate-contianer .exchange-rate-tracker {
+        width: 84%;
+    }
+
+    .collection-hero .main-container .add-options .exchange-dropdown .currency-dropDown {
+        justify-content: space-between;
+        padding-right: 0px;
+    }
+
+    .collection-hero .main-container .exchange-footer button {
+        width: 97%;
+        padding: 0px;
+    }
+
+    .collection-hero .main-container .timestamp {
+        font-family: Univers Next for HSBC, sans-serif;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 16px;
+        letter-spacing: 0px;
+        color: #767676;
+        margin-top: 10px;
+    }
+
+    .collection-hero .notice {
+        font-family: Univers Next for HSBC, sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0px;
+        color: #767676;
+        padding: 0px 15px;
+        margin-top: 10px;
+    }
+
+    .collection-hero .main-container .advance-content .exchange-rate-tracker {
+        background: #F3F3F3;
+        padding: 12px 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        width: 84%;
+        margin-top: 15px;
+    }
+
+    .collection-hero .main-container .addCurrency-btn-wrapper {
+        height: 44px;
+        padding: 0px;
+        border: unset;
+        justify-content: flex-start;
+        padding-left: 10px;
+        background: #F3F3F3;
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .collection-hero .show-choose .addCurrency-btn {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .collection-hero .main-container .exchange-footer {
+        height: unset;
+        background: unset;
+        width: 100%;
+    }
+
+    .collection-hero .main-container .add-options .exchange-dropdown {
+        border: 1px solid #767676;
+        width: 96%;
+        height: 44px;
+    }
+
+    .collection-hero .main-container .add-options {
+        position: unset;
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width:767px) and (max-width:1024px) {
+    .collection-hero .currency-change-view .summary-details {
+        grid-gap: 20px;
+    }
+
+    .collection-hero .currency-change-view .change-option span {
+        width: 70px;
+    }
+
+    .collection-hero .currency-rate-contianer .exchange-rate-tracker {
+        padding: 12px 20px;
+    }
+
+    .collection-hero .currency-rate-contianer .wrapper-elem {
+        grid-gap: 35px;
+    }
+}
+
+@media only screen and (min-width:767px) {
+
+    .collection-hero .main-container .timestamp,
+    .collection-hero .notice {
+        display: none;
+    }
+}
+
+/* HEROSECTION CSS END*/
